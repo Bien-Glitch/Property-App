@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Edit</title>
+	
+	<link rel="stylesheet" href="./design/css/bootstrap/bootstrap.css">
+	
+	<link rel="stylesheet" href="./design/assets/fontawesome/css/all.css">
+	
+	<link rel="stylesheet" href="./design/css/custom/main.css">
+</head>
+
+<header id="nav" class="fixed-top shadow-sm">
+	<nav class="navbar navbar-expand navbar-light bg-white">
+		<div class="container-lg">
+			<a href="./home.html" class="navbar-brand text-danger fw-bold">APP</a>
+			
+			<div class="navbar-nav">
+				<div class="nav-item"><a href="./home.html" class="nav-link link-muted">Home</a></div>
+				<div class="nav-item"><a href="./register.html" class="nav-link link-muted">Register</a></div>
+				<div class="nav-item"><a href="./login.html" class="nav-link link-muted">Login</a></div>
+				<div class="link-divider"></div>
+				<div class="dropdown">
+					<a type="button" id="auth-dropdown" class="nav-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Account
+						<i class="fal fa-1x fa-angle-down"></i>
+					</a>
+					<div class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="auth-dropdown">
+						<a href="" class="d-flex justify-content-start align-items-center dropdown-item link-light">
+							<img src="./design/img/default_dp.png" alt="Victor" class="rounded rounded-circle display-picture me-2" style="width: 50px;height: 50px">
+							<div class="d-flex flex-column justify-content-center">
+								<span>Victor</span>
+								<span class="text-muted text-uppercase small">Dashboard</span>
+							</div>
+						</a>
+						<div class="px-2">
+							<div class="dropdown-divider border-light"></div>
+						</div>
+						<a href="" class="dropdown-item link-light"><i class="fal fa-1x fa-stream pe-2"></i> Dashboard</a>
+						<a href="" class="dropdown-item link-light"><i class="fal fa-1x fa-sign-out pe-2"></i> Logout</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section id="bottom" class="bg-white pt-3">
+		<div class="container-lg">
+			<div class="d-flex flex-column">
+				<div class="d-flex flex-fill justify-content-between align-items-center mb-4">
+					<span class="fw-bold fs-3">Welcome, Victor</span>
+					<!--<a href="./create.html" class="btn btn-sm btn-danger px-4">Create property</a>-->
+				</div>
+				<a href="" class="link-dark nav-bottom-link me-auto">Edit Property</a>
+			</div>
+		</div>
+	</section>
+</header>
+
+
+<body>
+	<main id="edit-property-page" class="body pt-5">
+		<div class="container-lg">
+			<form action="" method="post">
+				<div class="row">
+					<div class="col-lg-6 mb-2">
+						<label for="name" class="col-form-label-sm">Name</label>
+						<div class="input-group">
+							<input type="text" id="name" name="name" class="form-control" placeholder="Property Title">
+						</div>
+					</div>
+					
+					<div class="col-lg-6 mb-2">
+						<label for="location" class="col-form-label-sm">Location</label>
+						<div class="input-group">
+							<input type="text" id="location" name="location" class="form-control" placeholder="Location Address">
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-6 mb-2">
+						<label for="description" class="col-form-label-sm">Description</label>
+						<div class="input-group">
+							<textarea type="text" id="description" name="description" class="form-control" placeholder="Property Description"></textarea>
+						</div>
+					</div>
+					
+					<div class="col-lg-6 mb-2">
+						<div class="mb-2">
+							<label for="bedrooms" class="col-form-label-sm">Bedrooms</label>
+							<div class="input-group">
+								<input type="text" id="bedrooms" name="bedrooms" class="form-control" placeholder="No. of Bedrooms">
+							</div>
+						</div>
+						
+						<div class="mb-2">
+							<label for="toilets" class="col-form-label-sm">Toilets</label>
+							<div class="input-group">
+								<input type="text" id="toilets" name="toilets" class="form-control" placeholder="No. of Toilets">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-6 mb-2">
+						<label for="price" class="col-form-label-sm">Price</label>
+						<div class="input-group">
+							<input type="text" id="price" name="price" class="form-control" placeholder="Price">
+						</div>
+					</div>
+					
+					<div class="col-lg-6 mb-2">
+						<label for="parking_space" class="col-form-label-sm">Parking Space</label>
+						<div class="input-group">
+							<input type="text" id="parking_space" name="parking_space" class="form-control" placeholder="No. of Parking Spaces">
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-6 mb-2">
+						<label for="featured_image" class="col-form-label-sm">Featured Image</label>
+						<div class="input-group flex-nowrap align-items-center">
+							<input type="file" id="featured_image" name="featured_image" class="form-control" placeholder="Upload Image">
+						</div>
+					</div>
+					
+					<div class="col-lg-6 mb-2">
+						<label for="term_duration" class="col-form-label-sm">Term Duration</label>
+						<div class="input-group">
+							<input type="text" id="term_duration" name="term_duration" class="form-control" placeholder="Minimum rent term">
+						</div>
+					</div>
+				</div>
+				
+				<div class="mb-1">
+					<button type="submit" class="btn btn-danger px-5 mb-2">Save</button>
+				</div>
+			</form>
+		</div>
+	</main>
+</body>
+
+<script src="./design/js/jquery/jquery.js"></script>
+<script src="./design/js/bootstrap/bootstrap.bundle.js"></script>
+<script src="./design/js/custom/main.js"></script>
+</html>

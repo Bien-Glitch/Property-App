@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up</title>
+	
+	<link rel="stylesheet" href="./design/css/bootstrap/bootstrap.css">
+	
+	<link rel="stylesheet" href="./design/assets/fontawesome/css/all.css">
+	
+	<link rel="stylesheet" href="./design/css/fb-formvalidator/fusion.form.validator.css">
+	<link rel="stylesheet" href="./design/css/custom/main.css">
+</head>
+
+<header id="nav" class="fixed-top shadow-sm">
+	<nav class="navbar navbar-expand navbar-light bg-white">
+		<div class="container-lg">
+			<a href="./home.html" class="navbar-brand text-danger fw-bold">APP</a>
+			
+			<div class="navbar-nav">
+				<div class="nav-item"><a href="./home.html" class="nav-link link-muted">Home</a></div>
+				<div class="nav-item"><a href="./register.html" class="nav-link link-muted">Register</a></div>
+				<div class="nav-item"><a href="./login.html" class="nav-link link-muted">Login</a></div>
+				<div class="link-divider"></div>
+				<div class="dropdown">
+					<a type="button" id="auth-dropdown" class="nav-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Account
+						<i class="fal fa-1x fa-angle-down"></i>
+					</a>
+					<div class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="auth-dropdown">
+						<a href="" class="d-flex justify-content-start align-items-center dropdown-item link-light">
+							<img src="./design/img/default_dp.png" alt="Victor" class="rounded rounded-circle display-picture me-2" width="50px">
+							<div class="d-flex flex-column justify-content-center">
+								<span>Victor</span>
+								<span class="text-muted text-uppercase small">Dashboard</span>
+							</div>
+						</a>
+						<div class="px-2">
+							<div class="dropdown-divider border-light"></div>
+						</div>
+						<a href="" class="dropdown-item link-light"><i class="fal fa-1x fa-stream pe-2"></i> Dashboard</a>
+						<a href="" class="dropdown-item link-light"><i class="fal fa-1x fa-sign-out pe-2"></i> Logout</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<body>
+	<main id="register-page" class="body">
+		<div class="container-fluid h-100">
+			<div class="d-flex flex-column h-100">
+				<div class="auth-wrapper card shadow m-auto">
+					<div class="card-body">
+						<div class="text-center">
+							<span class="fs-5">Sign Up</span><br>
+							<span class="">Get started</span>
+						</div>
+						
+						<form action="" method="post" class="mt-3" id="register-form">
+							<div class="form-group">
+								<label for="first_name" class="col-form-label-sm">First Name</label>
+								<div class="input-group align-items-center form-field-group flex-nowrap">
+									<input type="text" id="first_name" name="first_name" class="form-control" placeholder="First Name">
+								</div>
+								<div id="first_nameValid" class="w3-small valid-text"></div>
+							</div>
+							
+							<div class="form-group">
+								<label for="last_name" class="col-form-label-sm">Last Name</label>
+								<div class="input-group align-items-center form-field-group flex-nowrap">
+									<input type="text" id="last_name" name="last_name" class="form-control" placeholder="Last Name">
+								</div>
+								<div id="last_nameValid" class="w3-small valid-text"></div>
+							</div>
+							
+							<div class="form-group">
+								<label for="email" class="col-form-label-sm">Email</label>
+								<div class="input-group align-items-center form-field-group flex-nowrap">
+									<input type="email" id="email" name="email" class="form-control" placeholder="Email">
+								</div>
+								<div id="emailValid" class="w3-small valid-text"></div>
+							</div>
+							
+							<div class="form-group">
+								<label for="password" class="col-form-label-sm">Password</label>
+								<div class="input-group align-items-center form-field-group flex-nowrap">
+									<input type="password" id="password" name="password" class="form-control" placeholder="Password">
+								</div>
+								<div id="passwordValid" class="w3-small valid-text"></div>
+							</div>
+							
+							<div class="form-group">
+								<label for="password_confirmation" class="col-form-label-sm">Confirm Password</label>
+								<div class="input-group align-items-center form-field-group flex-nowrap">
+									<input type="password" id="password_confirmation" name="password_confirmation" class="form-control" placeholder="Confirm Password">
+								</div>
+								<div id="password_confirmationValid" class="w3-small valid-text"></div>
+							</div>
+							
+							<div class="form-group">
+								<div class="d-flex flex-grow-0 flex-column justify-content-between">
+									<div class="form-check mb-2">
+										<input type="checkbox" class="form-check-input" id="accept" name="accept">
+										<label class="form-check-label" for="accept">
+											Agree to
+											<a class="link-primary">Privacy</a> and <a class="link-primary">Terms</a>
+										</label>
+									</div>
+									<button type="submit" class="btn btn-danger w-25 mb-2">Submit</button>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="form-message">
+									<div class="waiting-text d-none"><i class="far fa-1x fa-exclamation-circle text-danger"></i> <span class="text-primary">Please Wait...</span></div>
+									<div class="response-text small"></div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+
+<script src="./design/js/jquery/jquery.js"></script>
+<script src="./design/js/jquery-form/jquery.form.min.js"></script>
+<script src="./design/js/bootstrap/bootstrap.bundle.js"></script>
+
+<script src="./design/js/fb-formvalidator/fusion.form.validator.js"></script>
+<script src="./design/js/fb-formvalidator/fusion.form.util.js"></script>
+<script src="./design/js/fb-formvalidator/init.js"></script>
+
+<script src="./design/js/custom/main.js"></script>
+</html>

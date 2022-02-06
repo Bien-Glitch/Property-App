@@ -1,0 +1,146 @@
+* {
+	transition: all .2s ease .1s;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: var(--bs-light);
+}
+
+.link-light:hover, .link-light:focus {
+	color: #ffffff;
+}
+
+.link-muted {
+	color: #abbfc4;
+}
+
+.link-muted:hover, .link-muted:focus {
+	color: #95a1ac;
+	/*color: #FFFFFFBF;*/
+}
+
+.dropdown-menu-light {
+	color: #343a40;
+	background-color: #dee2e6;
+	border-color: rgba(255, 255, 255, 0.15);
+}
+
+.dropdown-menu-light .dropdown-item {
+	color: #343a40;
+}
+
+.dropdown-menu-light .dropdown-item:hover, .dropdown-menu-light .dropdown-item:focus {
+	color: #000;
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu-light .dropdown-item.active, .dropdown-menu-light .dropdown-item:active {
+	color: #000;
+	background-color: #0d6efd;
+}
+
+.dropdown-menu-light .dropdown-item.disabled, .dropdown-menu-light .dropdown-item:disabled {
+	color: #adb5bd;
+}
+
+.dropdown-menu-light .dropdown-divider {
+	border-color: rgba(255, 255, 255, 0.15);
+}
+
+.dropdown-menu-light .dropdown-item-text {
+	color: #343a40;
+}
+
+.dropdown-menu-light .dropdown-header {
+	color: #adb5bd;
+}
+
+.navbar .navbar-brand::before {
+	content: "";
+	background-color: var(--bs-danger);
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	border-radius: 5px;
+	display: inline-block;
+	transform: translateY(5px);
+	
+}
+
+.navbar .nav-link,
+.navbar .link-divider {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.navbar .link-divider::after {
+	content: "";
+	top: 50%;
+	transform: translateY(-50%);
+	height: 30%;
+	position: absolute;
+	border-left: 2px solid var(--bs-gray-500);
+}
+
+#nav > section#bottom .nav-bottom-link {
+	padding-bottom: 4px;
+	border-bottom: 4px solid var(--bs-danger);
+}
+
+.auth-wrapper {
+	width: 40%;
+}
+
+.icon-bg {
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	vertical-align: center
+}
+
+form label:not(.form-check-label) {
+	color: var(--bs-gray);
+}
+
+@media (max-width: 1200px) {
+	.auth-wrapper {
+		width: 50%;
+	}
+}
+
+@media (max-width: 992px) {
+	.auth-wrapper {
+		width: 60%;
+	}
+}
+
+@media (max-width: 768px) {
+	* {
+		font-size: 12px;
+	}
+	
+	.navbar .nav-link,
+	.navbar .link-divider {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	
+	.auth-wrapper {
+		width: 60%;
+	}
+	
+	.icon-bg {
+		width: 18px;
+		height: 18px;
+	}
+}
+
+@media (max-width: 576px) {
+	.auth-wrapper {
+		width: 90%;
+	}
+}
